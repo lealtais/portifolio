@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Caveat:wght@500;600&family=Courier+Prime&family=Lora:wght@400;500&family=Alfa+Slab+One&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', serif;
+}
+
+@media (max-width: 640px) { 
+  .hero-deco { display: none; } 
+}
+
+@keyframes steamRise {
+  0%   { transform: translateY(4px) scaleY(0.85); opacity: 0; }
+  25%  { opacity: 0.75; }
+  70%  { opacity: 0.35; }
+  100% { transform: translateY(-16px) scaleY(1.2); opacity: 0; }
+}
+
+.steam-line { 
+  animation: steamRise 2.4s ease-in-out infinite; 
+  transform-box: fill-box; 
+  transform-origin: bottom center; 
+}
